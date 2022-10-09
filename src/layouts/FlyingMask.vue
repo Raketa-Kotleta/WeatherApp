@@ -31,6 +31,7 @@ export default {
   background-color: #1c1c1c;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .container{
   width: 100%;
@@ -46,4 +47,5 @@ export default {
   align-items: center;
   flex-grow: 1;
 }
+
 </style>

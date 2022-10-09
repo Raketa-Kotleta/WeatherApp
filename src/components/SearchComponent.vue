@@ -1,8 +1,7 @@
 <template>
   <form action="" class="form">
-    <h1 class="form-title" @click="isShown = 'search-show'">Hello, friend!</h1>
+    <h1 class="form-title appearance" @click="isShown = 'search-show'">Hello, friend!</h1>
     <input type="search" class="form-search" :class="isShown" placeholder="Write your city..." >
-
   </form>
 </template>
 
@@ -25,10 +24,7 @@ export default {
 .form-title{
   font-size: 5.5rem;
   margin: 0;
-}
-.form-subtitle{
-  font-size: 3rem;
-  margin: 0 0 30px 0;
+  animation-duration: 2s;
 }
 .form-search{
   width: 90vw;
@@ -48,5 +44,16 @@ export default {
   transition: 1s;
   opacity: 1;
   transform: translateY(0px);
+}
+.appearance{
+  animation-name: appear;
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 </style>
